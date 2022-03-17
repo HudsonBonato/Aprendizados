@@ -1,0 +1,38 @@
+<meta charset="utf-8">
+
+<script> 
+    function pulaLinha() {
+
+        document.write("<br><br>");
+}
+
+    function mostra(frase) {
+
+        document.write(frase);
+        pulaLinha();
+}
+
+    var vitorias = parseInt(prompt("ENTRE COM O NUMERO DE VITORIAS."));
+
+    var empates = parseInt(prompt("ENTRE COM O MUNERO DE EMPATES."))
+
+    var pontos = (vitorias * 3) + empates;
+
+    mostra("OS PONTOS DO SEU TIME É: " + pontos);
+
+    if (pontos > 28) {
+        mostra("O seu time esta melhor que o ano passado.");
+    }
+
+    if (pontos < 28) {
+        mostra("O seu time esta pior que o ano passado.");
+    }
+
+    if (pontos == 28) {
+        mostra("O seu time esta igual ao ano passado.");
+    }
+
+    mostra("FIM.");
+    
+
+</script>

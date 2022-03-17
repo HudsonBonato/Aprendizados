@@ -1,0 +1,22 @@
+<meta charset="UTF-8">
+<script>
+    function pulaLinha() {
+        document.write("<br>");
+    }
+
+    function mostra(frase) {
+        document.write(frase);
+        pulaLinha();
+    }
+
+    var regressivo = 20;
+
+    while(regressivo >= 10) {
+
+        mostra(regressivo);
+        regressivo = regressivo - 1;
+    }
+
+    mostra("FIM");
+
+    </script>
